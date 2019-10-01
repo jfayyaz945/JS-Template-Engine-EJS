@@ -1,0 +1,24 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" type="text/css" href="/css/product.css">
+</head>
+<body>
+    <%- include('includes/nav.ejs') %>
+    <main>
+        <form class="product-form" action="/admin/add" method="POST">
+            <div class="form-control">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-control">
+                <label for="parentage">Parentage</label>
+                <input type="text" id="parentage" name="parentage">
+            </div>
+            <div class="form-control">
+                <label for="roll_no">Roll No</label>
+                <input type="text" id="roll_no" name="roll_no">
+            </div>
+            <button type="submit">Add Student</button>
+        </form>
+    </main>
+<%- include('includes/end.ejs') %>
